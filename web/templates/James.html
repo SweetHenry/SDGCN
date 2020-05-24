@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static '../static/James.css' %}">
+    <title>James</title>
+    <script>
+    function tip() {
+        setTimeout("alert('已对样本进行预测！')",5000);
+    }
+    </script>
+</head>
+<body>
+<div class="bgimg">
+</div>
+<div class="logo" >
+    <img src="../static/logo1.png" alt="" style="position:fixed;left: 500px;">
+    <div style="position:absolute;left: 1010px;top: 520px;">
+        <img src="../static/logo3.PNG" alt="" >
+    </div>
+</div>
+<form action="/page/James.html" method="get">
+    <div id="text1">
+        样本路径:&nbsp;<input type="text" id="kuangzi1" name="txt" size="26"  style="  border:2px solid yellowgreen ; font-size: 18px;border-radius: 8px;height: 30px;width: 300px;"  placeholder="请输入绝对路径" required>
+        <br>
+        <br>
+
+        输出路径:&nbsp;<input type="text" id="kuangzi2" name="aspect" size="26"  style="border:2px solid yellowgreen ; font-size: 18px;border-radius: 8px;height: 30px;width: 300px" placeholder="请输入绝对路径" required>
+        <!-- Aspect:<input type="password" name="userPass"> -->
+        <br>
+        <br>
+        <input type="submit" onsubmit="tip()" class=" button black round" value="提交" style="height: 30px;
+        border: 1px solid #1e1e1e;
+        font-size:16px ;
+        width: 140px;
+        line-height: 16px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 1px 1px #333;
+        border-radius: 5px;
+        margin: 0 20px 20px 0;
+        background-color: #545354;
+        overflow: hidden;">
+    </div>
+</form>
+</body>
+
+</html>

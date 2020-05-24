@@ -1,0 +1,22 @@
+.bgimg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+     /* background-color: #fff; */
+    background: url(https://file01.dysucai.com/d/file/lan2019010712/wuahb0so1cc.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+ }
+#text1{
+    position: fixed;
+    left: 405px;
+    top: 200px;
+    font-size: 26px;
+}

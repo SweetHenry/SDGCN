@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static '../static/text.css' %}">
+    <title>text</title>
+</head>
+<body>
+<div class="bgimg">
+
+</div>
+<div class="logo" style="left: 500px">
+    <img src="../static/logo1.png" alt="">
+</div>
+<div class="text" style="position: fixed ; top: 150px; left: 70px;" >
+
+    <table style="border:1px solid #8a2dfe; " >
+        <tr >
+        <td style="border-right: 1px solid #8a2dfe; border-bottom: 1px solid #8a2dfe;width: 80px;height: 40px;font-size: 18px">Sentence</td>
+        <td style=" border-bottom: 1px solid #8a2dfe;width: 320px;height: 40px;font-size: 18px;text-align: center">{{ text }}</td>
+        </tr>
+        <tr  >
+        <td style="border-bottom: 1px solid #8a2dfe;border-right: 1px solid #8a2dfe;width: 80px;height: 40px;font-size: 18px">Aspect</td>
+        <td style="border-bottom: 1px solid #8a2dfe; width: 320px;height: 40px;font-size: 18px ;text-align: center ">{{ aspect }}</td>
+        </tr>
+        <tr  >
+        <td style="border-right: 1px solid #8a2dfe;width: 80px;height: 40px;font-size: 18px">Sentiment</td>
+        <td style=" width: 320px;height: 40px;font-size: 18px;text-align: center">
+            {% if aspect == 'speed' %}
+                <img src="../static/1.png" alt=""  >
+            {% endif %}
+            {% if aspect == 'battery' %}
+                <img src="../static/0.png" alt="">
+            {% endif %}
+            {% if aspect == 'price' %}
+                <img src="../static/-1.png" alt="">
+            {% endif %}
+        </td>
+        </tr>
+
+    </table>
+</div>
+<div style="position:absolute;left: 1010px;top: 520px;">
+        <img src="../static/logo3.PNG" alt="" >
+</div>
+</body>
+</html>

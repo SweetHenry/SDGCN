@@ -1,0 +1,69 @@
+.bgimg{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+     /* background-color: #fff; */
+    background: url(http://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20180621/8385f03ea0f54607a2638492dbd54c3d.gif) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+ }
+.text{
+    position: fixed;
+    left: 150px;
+    top: 150px;
+    font-size: 26px;
+}
+.logo{
+    position:fixed;
+    left: 400px;
+
+}
+#text1{
+    position: fixed;
+    left: 130px;
+    top: 150px;
+    font-size: 26px;
+}
+#kuangzi1{
+    border:2px solid yellowgreen ;
+    font-size: 18px;
+    height: 30px;
+    border-radius: 8px
+}
+#kuangzi2{
+    border:2px solid yellowgreen ;
+    font-size: 18px;
+    height: 30px;
+    border-radius: 8px
+}
+
+
+.button.black {
+    border: 1px solid #333;
+    box-shadow: 0 1px 2px #8b8b8b inset, 0 -1px 0 #3d3d3d inset, 0 -2px 3px #8b8b8b inset;
+    background: -webkit-linear-gradient(top,#656565,#4c4c4c);
+    background: -moz-linear-gradient(top,#656565,#4a4a4a);
+    background: linear-gradient(top,#656565,#4a4a4a);
+}
+.round, .side, .tags {
+    padding-right: 30px;
+}
+.button {
+    width: 140px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    margin: 0 20px 20px 0;
+    position: relative;
+    overflow: hidden;
+}
